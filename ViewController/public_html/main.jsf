@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+        xmlns:dvt="http://xmlns.oracle.com/dss/adf/faces" xmlns:ui="http://java.sun.com/jsf/facelets">
+    <af:document title="main.jsf" id="d1">
+        <af:messages id="m1"/>
+        <af:resource type="css" source="jet/css/alta/2.2.0/web/alta.min.css"/>
+        <af:resource type="javascript" source="jet/js/libs/require/require.js"/>
+        <script>
+          require.config( {
+              baseUrl : "jet/js"
+          });
+
+          require(["main"]);
+        </script>
+               
+        <af:form id="f1">
+        <!-- chart -->
+            <ui:include src="/fragments/amis-chart-fragment.jsff"/>
+        <!-- person 
+            <af:iterator id="iterator" value="#{bindings.EmployeesVO.collectionModel}" var="item">
+                <ui:include src="/fragments/amis-person-fragment.jsff"/>
+            </af:iterator> -->
+        </af:form>
+    </af:document>
+</f:view>

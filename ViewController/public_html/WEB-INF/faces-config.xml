@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<faces-config version="2.1" xmlns="http://java.sun.com/xml/ns/javaee">
+  <application>
+    <default-render-kit-id>oracle.adf.rich</default-render-kit-id>
+  </application>
+  <managed-bean id="__1">
+    <managed-bean-name>jsonProviderBean</managed-bean-name>
+    <managed-bean-class>nl.amis.view.JsonProvider</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+  </managed-bean>
+</faces-config>

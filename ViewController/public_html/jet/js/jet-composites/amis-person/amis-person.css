@@ -1,0 +1,9 @@
+amis-person .person-item{
+background-color:#88DDDD;
+width:150px;
+height:100px;
+margin:10px;
+display: inline-block;
+border-radius:30px;
+text-align:center;
+}

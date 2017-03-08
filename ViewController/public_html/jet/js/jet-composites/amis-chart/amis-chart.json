@@ -1,0 +1,8 @@
+    {
+        "properties": {
+            "chartData": {
+                "type": "string"
+            }
+        }
+         
+    }

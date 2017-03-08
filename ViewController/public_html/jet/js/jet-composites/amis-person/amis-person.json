@@ -1,0 +1,10 @@
+    {
+        "properties": {
+            "amisPersonName": {
+                "type": "string"
+            },
+            "amisPersonEmail": {
+                "type": "string"
+            }
+        }
+    }

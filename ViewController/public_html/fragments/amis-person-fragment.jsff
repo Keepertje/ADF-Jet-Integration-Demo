@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets">
+    <amis-person amis-person-name="#{item.bindings.FirstName.inputValue}" amis-person-email="#{item.bindings.Email.inputValue}" />
+</ui:composition>
