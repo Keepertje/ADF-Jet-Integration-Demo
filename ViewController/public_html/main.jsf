@@ -16,11 +16,11 @@
                
         <af:form id="f1">
         <!-- chart -->
-            <ui:include src="/fragments/amis-chart-fragment.jsff"/>
-        <!-- person 
+           <ui:include src="/fragments/amis-chart-fragment.jsff"/>
+        <!-- person -->
             <af:iterator id="iterator" value="#{bindings.EmployeesVO.collectionModel}" var="item">
                 <ui:include src="/fragments/amis-person-fragment.jsff"/>
-            </af:iterator> -->
+            </af:iterator> 
         </af:form>
     </af:document>
 </f:view>

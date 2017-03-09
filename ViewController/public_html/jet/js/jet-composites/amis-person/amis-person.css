@@ -6,4 +6,11 @@ margin:10px;
 display: inline-block;
 border-radius:30px;
 text-align:center;
+ transition: all 0.5s ease;
+}
+
+
+amis-person .person-item:hover{
+background-color:#DD88DD;
+
 }

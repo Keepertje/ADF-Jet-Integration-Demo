@@ -3,19 +3,14 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'ojs/ojknockout','ojs/ojbutton', 'oj
     function AmisChartComponentModel(context) {
         var self = this;
     
-        
         context.props.then(function (propertymap) {
             self.properties = propertymap;
-            var barData = self.createBarSeries(JSON.parse(propertymap.chartData).values);
-    
+            var dataAsJson = JSON.parse(propertymap.chartData);
+            var barData = self.createBarSeries(dataAsJson.values);
             /* Chart Data */
             self.barSeriesValue = ko.observableArray(barData);
         })
         
-        var barGroups = ["Employees"];
-        self.barGroupsValue = ko.observableArray(barGroups);
-        self.stackValue = ko.observable('off');
-        self.orientationValue = ko.observable('vertical');
 
         self.createBarSeries = function (jsonDataArray) {
             var data = [];
@@ -26,6 +21,11 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'ojs/ojknockout','ojs/ojbutton', 'oj
             })
             return data;
         }
+        
+         var barGroups = ["Employees"];
+        self.barGroupsValue = ko.observableArray(barGroups);
+        self.stackValue = ko.observable('off');
+        self.orientationValue = ko.observable('vertical');
         
         /* toggle buttons*/
         self.stackOptions = [
